@@ -13,7 +13,7 @@ public class Equipment {
     private String type;
     private String status;
     private String staff;
-    private String fied;
+    private String field;
 
     public String getId() {
         return id;
@@ -55,11 +55,11 @@ public class Equipment {
         this.staff = staff;
     }
 
-    public String getFied() {
-        return fied;
+    public String getField() {
+        return field;
     }
 
-    public void setFied(String fied) {
-        this.fied = fied;
+    public void setField(String fied) {
+        this.field = fied;
     }
 }
