@@ -9,6 +9,7 @@
 <body>
 <div class="container">
     <h1 class="text-center my-4">Green Shadow pvt Ltd.</h1>
+    <h2 class="text-center my-4">Crop Details</h2>
     <a class="btn btn-primary" href="/crop/create">Save crop</a>
 
     <table class="table">
@@ -34,9 +35,10 @@
             </td>
             <td th:text="${crop.category}"></td>
             <td th:text="${crop.season}"></td>
+            <td th:text="${crop.field}"></td>
             <td style="white-space: nowrap">
-                <a class="btn btn-primary btn-sm" th:href="@{/crop/edit{id=${crop.id}}}">Edit</a>
-                <a class="btn btn-danger btn-sm" th:href="@{/crop/delete{id=${crop.id}}}" onclick="return confirm('Are you sure?')">Delete</a>
+                <a class="btn btn-primary btn-sm" th:href="@{/crop/edit{code=${crop.code}}}">Edit</a>
+                <a class="btn btn-danger btn-sm" th:href="@{/crop/delete{code=${crop.code}}}" onclick="return confirm('Are you sure?')">Delete</a>
             </td>
         </tr>
         </tbody>
